@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"mpu6050\startup_stm32f103xb.o"
+"mpu6050\main.o"
+"mpu6050\stm32f1xx_it.o"
+"mpu6050\stm32f1xx_hal_msp.o"
+"mpu6050\stm32f1xx_hal_gpio_ex.o"
+"mpu6050\stm32f1xx_hal_i2c.o"
+"mpu6050\stm32f1xx_hal.o"
+"mpu6050\stm32f1xx_hal_rcc.o"
+"mpu6050\stm32f1xx_hal_rcc_ex.o"
+"mpu6050\stm32f1xx_hal_gpio.o"
+"mpu6050\stm32f1xx_hal_dma.o"
+"mpu6050\stm32f1xx_hal_cortex.o"
+"mpu6050\stm32f1xx_hal_pwr.o"
+"mpu6050\stm32f1xx_hal_flash.o"
+"mpu6050\stm32f1xx_hal_flash_ex.o"
+"mpu6050\stm32f1xx_hal_exti.o"
+"mpu6050\stm32f1xx_hal_tim.o"
+"mpu6050\stm32f1xx_hal_tim_ex.o"
+"mpu6050\at24c256.o"
+"mpu6050\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Mpu6050\Mpu6050.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Mpu6050.map" -o Mpu6050\Mpu6050.axf
